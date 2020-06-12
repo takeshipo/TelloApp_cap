@@ -46,6 +46,11 @@ pip install kivy.deps.gstreamer --extra-index-url https://kivy.org/downloads/pac
 pip install kivy
 ```
 
+実行コマンド
+```cmd
+python MainApp.py
+```
+
 ## ProductImage
 
 <img src="product_image.jpg">
