@@ -1,0 +1,80 @@
+# -*- coding: utf-8 -*-
+#encoding:utf-8
+#3cloums set Button
+GridLayout:
+    cols:3
+    size: root.size
+    #size_hint_y:0.5
+
+    #takeBtn
+    Button:
+        id: button1
+        text: ""
+        on_press: app.takeoffBtnClicked()
+        background_normal: 'img/takeoff_n.png'
+        background_down: 'img/takeoff_d.png'
+
+    #fowardBtn
+    Button:
+        id: button2
+        text: ""
+        on_press: app.toggleFlag("flag_fow",1)
+        #op_press: app.fowBtnClicked()
+        background_normal: 'img/up_n.png'
+        background_down: 'img/up_d.png'
+
+    #landBtn
+    Button:
+        id: button3
+        text: ""
+        on_press: app.landBtnClicked()
+        background_normal: 'img/land_n.png'
+        background_down: 'img/land_d.png'
+
+    #leftBtn
+    Button:
+        id: button4
+        text: ""
+        on_press: app.toggleFlag("flag_lef",1)
+        background_normal: 'img/left_n.png'
+        background_down: 'img/left_d.png'
+
+    #stopBtn
+    Button:
+        id: button5
+        text: ""
+        on_press: app.stopBtnClicked()
+        background_normal: 'img/stop_n.png'
+        background_down: 'img/stop_d.png'
+
+    #rightBtn
+    Button:
+        id: button6
+        text: ""
+        on_press: app.toggleFlag("flag_rig",1)
+        background_normal: 'img/right_n.png'
+        background_down: 'img/right_d.png'
+
+    #flipBtn
+    Button:
+        id: button7
+        text: ""
+        on_press: app.flipBtnClicked()
+        background_normal: 'img/flip_n.png'
+        background_down: 'img/flip_d.png'
+
+    #downBtn
+    Button:
+        id: button8
+        text: ""
+        on_press: app.toggleFlag("flag_bak",1)
+        background_normal: 'img/down_n.png'
+        background_down: 'img/down_d.png'
+    
+    #unkownBtn
+    Button:
+        id: button9
+        text: ""
+        background_normal: 'img/unknown.png'
+        background_down: 'img/error.png'
+
